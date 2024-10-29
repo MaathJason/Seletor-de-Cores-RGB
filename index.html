@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <title>Seletor RGB PW1</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Insira a cor RGB</h1>
+        <div class="vermelhodiv">
+            <p>(<span class="red">R</span>) Vermelho:</p><input oninput="mudarcores()" id="redinput" min="0" max="255" class="vermelho" type="range"><input id="redoutput" class="readonly" readonly type="text">
+        </div>
+        <div class="verdediv">
+            <p>(<span class="green">G</span>) Verde:</p><input oninput="mudarcores()" id="greeninput" min="0" max="255" class="verde" type="range"><input id="greenoutput" class="readonly" readonly type="text">
+        </div>
+        <div class="azuldiv">
+            <p>(<span class="blue">B</span>) Azul:</p><input oninput="mudarcores()" id="blueinput" min="0" max="255" class="azul" type="range"><input id="blueoutput" class="readonly" readonly type="text">
+        </div>
+        <div id="divcor" class="outputcor"></div>
+    </div>
+</body>
+</html>
